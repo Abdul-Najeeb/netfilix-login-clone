@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+    background: url(images/hero-img.jpg) no-repeat;
+    background-position: center center;
+}
+
+nav {
+    position: fixed;
+    z-index: 1;
+    padding: 25px 180px;
+}
+
+nav a img {
+    width: 140px;
+}
+
+.page {
+    position: absolute;
+    width: 500px;
+    padding: 50px;
+    top: 50%;
+    left: 50%;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.65);
+    transform: translate(-50%, -50%);
+}
+
+.page h2 {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #fff;
+}
+
+.page form {
+    margin: 25px 0 65px;
+}
+
+form .box1 input {
+    height: 60px;
+    width: 380px;
+    font-size: medium;
+    background-color: #111111;
+    text-decoration: none;
+    border: 1px solid #4b4b4b;
+    margin: 10px 0px;
+    padding: 0 17px;
+    border-radius: 6px;
+    color: #fff;
+}
+
+.btn-sign button {
+    height: 50px;
+    width: 380px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 7px;
+    background-color: red;
+    color: rgb(255, 255, 255);
+    border: 1px solid red;
+    margin: 16px 0px;
+    transition: all .4s ease;
+}
+
+.btn-sign button:hover {
+    background-color: rgb(183, 2, 2);
+
+}
+
+form h3 {
+    margin-bottom: 12px;
+    text-align: center;
+    color: #fff;
+}
+
+.btn2 button {
+    height: 40px;
+    width: 380px;
+    font-size: 1rem;
+    font-weight: 400;
+    border-radius: 7px;
+    background-color: rgb(67 67 67);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(67 67 67);
+    margin-bottom: 16px;
+    transition: all .4s ease
+}
+
+.btn2 button:hover {
+    background-color: #313131;
+}
+
+.help {
+    margin-top: 15px;
+    color: #989898;
+}
+
+.help a {
+    color: #fff;
+    transition: all .4s ease;
+}
+
+form a {
+    color: #fff;
+    text-decoration: none;
+    transition: all .4s ease;
+}
+
+form a:hover {
+    color: rgb(148, 148, 148);
+    text-decoration: underline;
+}
+
+form .remember {
+    margin-top: 15px;
+    accent-color: #fff;
+    color: #989898;
+}
+
+form small {
+    margin-top: 15px;
+    color: #989898;
+}
+
+.learn a {
+    color: rgb(56, 56, 180);
+}
+
+
+@media (max-width:1450px) {
+    nav {
+        position: fixed;
+        z-index: 1;
+        padding: 25px 140px;
+    }
+    nav a img {
+    width: 120px;
+}
+.page{
+    margin-top: 120px;
+}
+}
+
+@media (max-width:1300px) {
+    nav {
+        position: fixed;
+        z-index: 1;
+        padding: 25px 110px;
+    }
+        nav a img {
+    width: 90px;
+}
+.page{
+    margin-top: 120px;
+}
+}
+@media (max-width:1000px) {
+    nav {
+        position: fixed;
+        z-index: 1;
+        padding: 25px 10px;
+    }
+        nav a img {
+    width: 90px;
+}
+.page{
+    margin-top: 120px;
+}
+}
+@media (max-width:800px) {
+    nav {
+        position: fixed;
+        z-index: 1;
+        padding: 25px 10px;
+    }
+        nav a img {
+    width: 90px;
+}
+.page{
+    margin-top: 150px;
+}
+}
